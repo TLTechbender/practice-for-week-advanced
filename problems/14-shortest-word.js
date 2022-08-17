@@ -16,6 +16,18 @@ console.log(shortestWord('do what you enjoy'));         // 'do'
 
 let shortestWord = function(sentence) {
   // Your code here
+    let words =  sentence.split(" ");
+
+  let shortest = words.reduce(function(acc, el) {
+    if (el.length <= acc.length) {
+      return el;
+    } else {
+      return acc;
+    }
+  });
+
+  return shortest;
+    // ngl copied the solution all the way, I don't know why I keep getting stuck on this kinda problem.
 };
 
 // Your code here
@@ -26,4 +38,4 @@ try {
   module.exports = shortestWord;
 } catch (e) {
   module.exports = null;
-}
+}

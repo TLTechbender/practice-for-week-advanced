@@ -13,6 +13,10 @@ console.log(tripler([-5, 10, 0, 11])); // [ -15, 30, 0, 33 ]
 
 let tripler = function(nums) {
     // Your code here
+    let answer=nums.map(function(ele){
+     return ele * 3;
+    });
+    return answer;
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

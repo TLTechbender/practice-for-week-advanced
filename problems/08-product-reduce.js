@@ -16,6 +16,12 @@ console.log(productWithReduce([4, 3])); // 12
 */
 
 let productWithReduce = function(nums) {
+ let initialValue=1;
+    let answer=nums.reduce(function(acc,ele){
+ return acc*ele;
+    },initialValue);
+
+return answer;
     // Your code here
 }
 
@@ -25,4 +31,4 @@ try {
   module.exports = productWithReduce;
 } catch (e) {
   module.exports = null;
-}
+}
